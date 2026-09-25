@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img{
+        border-radius: 25%;
+    }
+
+    .first{
+        width: 300px;
+        flex-direction:row;
+    }
+    .first1{
+        
+        width: 300px;
+
+        filter:brightness(0.15) saturate(5);
+    }
+    .center{
+      justify-content: center;
+      align-items: center;
+      height: 90px;
+      width: 1000px;
+
+    }
+
+ul {
+  display: flex;
+  width: 100%;
+}
+
+@layer presentation {
+  body {
+    background: rgb(84, 4, 4);
+    display: grid;
+
+    place-items: center;
+  }
+  
+  ul {
+  
+    border-radius: 5px;
+    padding-inline: 0;
+  }
+  
+  li {
+    list-style: none;
+    padding: 15px;
+    align-content: space-around;
+    
+
+  }
+}
+</style>
+<body>
+<ul>
+    <li><img class="first1" src="https://images.playgroundai.com/f5102f82-d418-4d91-ad65-2de44fd89876.jpeg?c=1"></li>
+    <li><img class="first" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRI4Nps8TAagTVyDF4v5E6gU_vnbpB763KloTKiXUiLw&s=10"></li>
+    <li><img class="first" src="https://i.pinimg.com/474x/6c/de/8c/6cde8ce760a0ffe683093436c746c664.jpg"></li>
+    <li><img class="first" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp3_D6Iz8EwDxm_NJDto1RCgEpQ5bJ3GPYRjWx3yKK2g&s=10"></li>
+    <li><img class="first" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKU8GYWJ06XmhdRnC8lGzRBnyGhPpxoo5QHgvO9pLsIg&s=10"></li>
+
+</ul>
+
+<img class="center" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3l0cFs42cle6CodZvSqhckypFZVCZCriSoM7eLtWv3g&s=10" style="border-radius: 10%;">
+
+<ul>
+    <li><img class="first1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4pD7KBX17e0Jxeiyo2cJm5985r2pddkbgVFQ_D5erPQ&s=10"></li>
+    <li><img class="first1" src="https://images.stockcake.com/public/d/5/2/d5240479-b79c-4d14-9b0a-88020d8c5a56_large/crystallized-ruby-drops-stockcake.jpg"></li>
+    <li><img class="first1" src="https://images.floweradvisor.com/Blog/assets_com/2021/04/Lycoris-Radiata.jpg"></li>
+    <li><img class="first1" src="https://i.pinimg.com/736x/49/7f/41/497f4136689e38ece7903b1fca853e50.jpg"></li>
+    <li><img class="first1" src="https://img.artpal.com/069092/89-23-9-21-8-53-50m.jpg"></li>
+
+</ul>
+</body>
+
+</html>
